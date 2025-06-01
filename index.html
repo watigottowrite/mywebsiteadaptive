@@ -16,7 +16,7 @@
     <header>
         <div class="header container">
             <div class="logo">
-                <p onclick="location.href='index.html'">Комфорт</p>
+                <p onclick="location.href='index.html'">Мрамор</p>
             </div>
 
             <input type="checkbox" id="burger">
@@ -26,22 +26,15 @@
 
             <nav>
                 <a href="#banner">Главная</a>
-                <a href="#advantages">О нас</a>
-                <a href="#feedback">Отзывы</a>
+                <a href="#about">О нас</a>
+                <a href="#catalog">Услуги</a>
+                <a href="#advantages">Проекты</a>
+                <a href="#feedback">Новости</a>
                 <a href="#contacts">Контакты</a>
             </nav>
             <div class="searchandlogin">
-                <div class="searchinput">
-                    <div class="search">
-                        <input type="text" placeholder="Поиск">
-                    </div>
-                    <div class="sign">
-                        <img src="assets/media/img/header/search.svg" alt="">
-                    </div>
-                </div>
-                <a href="registation.html">
-                    <button class="logbtn">Войти</button>
-                </a>
+                <p>+ 7 987 266 76 22</p>
+                <button class="logbtn">Позвонить</button>
             </div>
         </div>
     </header>
@@ -49,97 +42,154 @@
     <!-- banner -->
     <div class="banner" id="banner">
         <div class="banner_content container">
-            <h1>Стиль и удобство в вашем доме</h1>
-            <a href="#catalog">Каталог</a>
+            <h1>Построй будущее с нами!</h1>
+            <a href="#catalog">Услуги</a>
         </div>
     </div>
     <!-- banner -->
-    <!-- advantages -->
-    <div class="advantages" id="advantages">
-        <div class="advantages_content container">
+    <!-- about -->
+    <div class="about my100" id="about">
+        <div class="about_content container">
             <div class="left_content">
-                <img src="assets/media/img/advantages/advantages.png" alt="">
+                <img src="assets/media/img/about/house.jpeg" alt="">
             </div>
             <div class="right_content">
-                <h2>Почему мы?</h2>
-                <h3>Компания "Комфорт" предлагает разнообразные стили и модели мебели, что позволяет каждому клиенту
-                    найти что-то подходящее для своего интерьера. Мебель изготавливается из высококачественных и
-                    экологически чистых материалов, что обеспечивает долговечность и безопасность продукции.</h3>
+                <h2>О компании</h2>
+                <h3>Наша миссия заключается в создании качественной, надежной и эстетически привлекательной
+                    инфраструктуры, которая улучшает жизнь людей и способствует устойчивому развитию общества. Мы
+                    стремимся к инновациям и применению современных технологий для обеспечения безопасности и
+                    долговечности наших проектов.</h3>
             </div>
         </div>
     </div>
+    <!-- about -->
+
     <!-- advantages -->
+    <div class="advantages my100" id="advantages">
+        <h2>Услуги</h2>
+        <div class="advantages_cards container">
+
+            <div class="advantages_card">
+                <img src="assets/media/img/advantages/1.png" alt="">
+                <button class="accordion">Частный коттедж</button>
+                <div class="panel">
+                    <p>Индивидуальный проект загородного дома с дорогим и качественным ремонтом.</p>
+                </div>
+
+            </div>
+
+            <div class="advantages_card">
+                <img src="assets/media/img/advantages/2.jpg" alt="">
+                <button class="accordion">Торгово-офисный центр</button>
+                <div class="panel">
+                    <p>Современное коммерческое здание, сочетающее торговые площади и офисы.</p>
+                </div>
+
+            </div>
+
+            <div class="advantages_card">
+                <img src="assets/media/img/advantages/3.jpg" alt="">
+                <button class="accordion">Элитный жилой комплекс</button>
+                <div class="panel">
+                    <p>Строительство многоэтажного жилого комплекса премиум-класса с применением индивидуальных
+                        дизайнерских решений.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+
+                    var panel = this.nextElementSibling;
+                    if (getComputedStyle(panel).display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
+    <!-- advantages -->
+
     <!-- catalog -->
     <div class="catalog" id="catalog">
         <div class="catalog_content container">
-            <h2>Каталог</h2>
+            <h2>Проекты</h2>
             <div class="filter my-100">
-                <a href="#">Спальня</a>
-                <a href="#">Гостиная</a>
-                <a href="#">Кабинет</a>
-                <a href="#">Кухня</a>
-                <a href="#">Прихожая</a>
+                <a href="#">ЖК</a>
+                <a href="#">Коммерческая недвижимость</a>
+                <a href="#">Частные дома</a>
             </div>
             <div class="catalog_cards">
                 <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product1.png" alt="">
-                    <h5>Диван Киль-3</h5>
-                    <h3>136 333 ₽</h3>
-                    <h4>5.0</h4>
+                    <img src="assets/media/img/catalog/1.webp" alt="">
+                    <h5>ЖК "Вишнёвый Сад"</h5>
+                    <h3>г. Казань, улица Муштари, 2А</h3>
+                    <h4>Год завершения - 2013</h4>
                     <button class="catalogbtn" onclick="location.href='product.html'">Подробнее</button>
                 </div>
 
                 <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product2.png" alt="">
-                    <h5>Кресло Archie</h5>
-                    <h3>33 323 ₽</h3>
-                    <h4>4.7</h4>
+                    <img src="assets/media/img/catalog/2.jpg" alt="">
+                    <h5>Многофункциональный комплекс Uno</h5>
+                    <h3>г. Казань, улица Сибгата Хакима, 62</h3>
+                    <h4>Год завершения - 2024</h4>
                     <button class="catalogbtn">Подробнее</button>
                 </div>
 
                 <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product3.png" alt="">
-                    <h5>Стеллаж Bonnie</h5>
-                    <h3>85 600 ₽</h3>
-                    <h4>4.9</h4>
+                    <img src="assets/media/img/catalog/3.jpg" alt="">
+                    <h5>Частный дом в Подмосковье</h5>
+                    <h3>Московская область</h3>
+                    <h4>Год завершения - 2024</h4>
                     <button class="catalogbtn">Подробнее</button>
                 </div>
 
-                <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product4.png" alt="">
-                    <h5>Столик zz-017</h5>
-                    <h3>16 321 ₽</h3>
-                    <h4>4.7</h4>
-                    <button class="catalogbtn">Подробнее</button>
-                </div>
-
-                <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product5.png" alt="">
-                    <h5>Диван Boorger</h5>
-                    <h3>152 952 ₽</h3>
-                    <h4>5.0</h4>
-                    <button class="catalogbtn">Подробнее</button>
-                </div>
-
-                <div class="catalog_card">
-                    <img src="assets/media/img/catalog/product6.png" alt="">
-                    <h5>Столик Malrine</h5>
-                    <h3>10 583 ₽</h3>
-                    <h4>4.6</h4>
-                    <button class="catalogbtn">Подробнее</button>
-                </div>
-
-            </div>
-            <div class="link">
-                <a href="catalog.html">Смотреть ещё</a>
             </div>
         </div>
     </div>
     <!-- catalog -->
+    <!-- news -->
+    <div class="news">
+        <h2>Новости</h2>
+        <div class="news_cards container">
+            <div class="news_card">
+                <h3>Завершение строительства элитного ЖК</h3>
+                <h4>Строительная компания "Мрамор" завершила возведение жилого комплекса "Бриллиант" в Москве.</h4>
+            </div>
+
+            <div class="news_card">
+                <h3>Партнерство с итальянскими поставщиками</h3>
+                <h4>Компания "Мрамор" подписала контракт с Carpenter Bruts (Италия) на прямые поставки дерева для объектов в Санкт-Петербурге.</h4>
+            </div>
+
+            <div class="news_card">
+                <h3>Инновация: тёплые полы с подогревом</h3>
+                <h4>"Мрамор" представила технологию нагреваемых полов для коттеджей и премиальных квартир. Первый проект с этой технологией — резиденция в Барвихе.</h4>
+            </div>
+
+        </div>
+    </div>
+    <!-- news -->
+
+    
+
     <!-- feedback -->
+
+    <!-- feedback -->
+     <div class="feedbackbg">
     <div class="feedback" id="feedback">
         <h2>Отзывы</h2>
-        <div class="feedback_cards container">
+        <div class="feedback_slides">
+        <div class="feedback_cards">
+
             <div class="feedback_card">
                 <div class="card_content">
                     <div class="cardname">
@@ -148,12 +198,11 @@
                         </div>
                         <div class="name">
                             <h3>Настя Баленсиака</h3>
-                            <h4>4.8</h4>
+                            <h4>5.0</h4>
                         </div>
                     </div>
                     <div class="cardtext">
-                        <h5>Хорошее качество, быстрая доставка. Большой и вместительный шкаф нашла именно здесь! Нигде
-                            такой не видела ещё!</h5>
+                        <h5>Отличная компания! Построили нам шикарный дом!</h5>
                     </div>
                 </div>
             </div>
@@ -170,8 +219,7 @@
                         </div>
                     </div>
                     <div class="cardtext">
-                        <h5>Брал себе здесь кухонный стол, и знаете? Товар более чем отличный! Качество очень хорошее и
-                            в интерьере смотрится супер.</h5>
+                        <h5>Именно здесь нам помогли решить вопрос с офисным центром, компания Balceagian благодарит вас за помощь</h5>
                     </div>
                 </div>
             </div>
@@ -188,30 +236,106 @@
                         </div>
                     </div>
                     <div class="cardtext">
-                        <h5>Кухонная гарнитура прекрасно дополнила интерьер и добавила комнате новые краски!</h5>
+                        <h5>Очень удобный сервис и хорошая поддержка!</h5>
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        <div class="feedback_cards">
+
+            <div class="feedback_card">
+                <div class="card_content">
+                    <div class="cardname">
+                        <div class="avatar">
+                            <img src="assets/media/img/feedback/feedback4.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>Крик Оуэнс</h3>
+                            <h4>4.8</h4>
+                        </div>
+                    </div>
+                    <div class="cardtext">
+                        <h5>Очень удобный сайт!</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback_card">
+                <div class="card_content">
+                    <div class="cardname">
+                        <div class="avatar">
+                            <img src="assets/media/img/feedback/feedback5.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>Лорд Фаркуад</h3>
+                            <h4>4.5</h4>
+                        </div>
+                    </div>
+                    <div class="cardtext">
+                        <h5>Хороший сервис, быстро решили вопрос по поводу моей студии звукозаписи.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback_card">
+                <div class="card_content">
+                    <div class="cardname">
+                        <div class="avatar">
+                            <img src="assets/media/img/feedback/feedback6.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <h3>Майор Пейн</h3>
+                            <h4>5.0</h4>
+                        </div>
+                    </div>
+                    <div class="cardtext">
+                        <h5>Очень удобный сайт, благодаря ним снесём студию звукозаписи, а на её месте откроем завод!</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        
         </div>
         <div class="slider">
-            <img src="assets/media/img/feedback/prev.svg" alt="">
-            <img src="assets/media/img/feedback/next.svg" alt="">
+            <button onclick="changeSlide(-1)" class="left"><img src="assets/media/img/feedback/prev.svg" alt=""></button>
+            <button onclick="changeSlide(1)" class="right"><img src="assets/media/img/feedback/next.svg"  alt=""></button>
         </div>
     </div>
     </div>
+    </div>
+    <script>
+
+        let currentSlide = 0;
+
+        function changeSlide(direction) {
+            let slides = document.querySelector('.feedback_slides');
+            let totalSlide = document.querySelectorAll('.feedback_cards').length;
+            currentSlide = (currentSlide + direction + totalSlide) % totalSlide;
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+    </script>
     <!-- feedback -->
     <!-- contacts -->
     <div class="contacts" id="contacts">
         <h2>Всегда на связи</h2>
         <div class="contacts_content container">
             <div class="contactleft">
-                <h3>Адрес - Проспект Победы, 141</h3>
-                <h3>Почта - Comfortteam@gmail.com</h3>
-                <h3>Номер - +7 987 263 76 21</h3>
+                <h3>Адрес - г. Казань, ул. Чернышевского 17</h3>
+                <form action="#">
+                    <h3>Форма обратной связи</h3>
+                    <input type="text" placeholder="Ваша почта:">
+                </form>
+                <h3>Почта - MarbleCompany@gmail.com</h3>
+                <h3>Номер - +7 987 266 76 22</h3>
                 <h3>Открыты с 10:00 - 22:00<br>Без выходных</h3>
             </div>
             <div class="contactright">
-                <img src="assets/media/img/contact/map.png" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.0530174995256!2d49.10735437717076!3d55.79231728894654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead178ba6b881%3A0x43d60d66cab241e1!2z0YPQuy4g0KfQtdGA0L3Ri9GI0LXQstGB0LrQvtCz0L4sIDE3LCDQmtCw0LfQsNC90YwsINCg0LXRgdC_LiDQotCw0YLQsNGA0YHRgtCw0L0sIDQyMDExMQ!5e0!3m2!1sru!2sru!4v1748787158721!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -219,45 +343,22 @@
     <!-- footer -->
     <footer>
         <div class="footer container">
-            <div class="nav_menu">
-                <div class="category">
-                    <h2>Каталог</h2>
-                    <h3>Спальня</h3>
-                    <h3>Гостиная</h3>
-                    <h3>Кабинет</h3>
-                    <h3>Кухня</h3>
-                    <h3>Прихожая</h3>
-                </div>
-                <div class="category">
-                    <h2>О компании</h2>
-                    <h3>Принципы</h3>
-                    <h3>История</h3>
-                    <h3>Работа</h3>
-                    <h3>Новости</h3>
-                    <h3>FAQ</h3>
-                </div>
-                <div class="category">
-                    <h2>Покупателям</h2>
-                    <h3>Акции</h3>
-                    <h3>Доставка</h3>
-                    <h3>Оплата</h3>
-                    <h3>Услуги</h3>
-                    <h3>Поддержка</h3>
-                </div>
-                <div class="category">
-                    <h2>Партнёрам</h2>
-                    <h3>Кооперация</h3>
-                    <h3>Дизайнерам</h3>
-                    <h3>Реклама</h3>
-                    <h3>Для отелей</h3>
-                    <h3>Поставки</h3>
-                </div>
-            </div>
             <div class="footer_menu">
                 <div class="logo">
                     <p onclick="location.href='index.html'">Комфорт</p>
                 </div>
-                <button class="logbtn" onclick="location.href='registation.html'">Войти</button>
+                <nav>
+                <a href="#banner">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#catalog">Услуги</a>
+                <a href="#advantages">Проекты</a>
+                <a href="#feedback">Новости</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+                <div class="social">
+                    <img src="assets/media/img/footer/VK com.svg" alt="">
+                    <img src="assets/media/img/footer/Telegram App.svg" alt="">
+                </div>
             </div>
         </div>
         </div>

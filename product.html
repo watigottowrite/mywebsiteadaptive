@@ -7,6 +7,8 @@
     <link rel="icon" href="assets/media/img/header/favicon.svg">
     <title>Комфорт</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tablet.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="assets/css/mobile.css" media="(max-width: 430px)">
 </head>
 
 <body>
@@ -14,23 +16,25 @@
     <header>
         <div class="header container">
             <div class="logo">
-                <p onclick="location.href='index.html'">Комфорт</p>
+                <p onclick="location.href='index.html'">Мрамор</p>
             </div>
+
+            <input type="checkbox" id="burger">
+            <label for="burger">
+                <span></span>
+            </label>
+
             <nav>
-                
+                <a href="#banner">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#catalog">Услуги</a>
+                <a href="#advantages">Проекты</a>
+                <a href="#feedback">Новости</a>
+                <a href="#contacts">Контакты</a>
             </nav>
             <div class="searchandlogin">
-                <div class="searchinput">
-                    <div class="search">
-                        <input type="text" placeholder="Поиск">
-                    </div>
-                    <div class="sign">
-                        <img src="assets/media/img/header/search.svg" alt="">
-                    </div>
-                </div>
-                <a href="registation.html">
-                    <button class="logbtn">Войти</button>
-                </a>
+                <p>+ 7 987 266 76 22</p>
+                <button class="logbtn">Позвонить</button>
             </div>
         </div>
     </header>
@@ -49,10 +53,10 @@
 
                     <div class="product-left-frames">
                         <div class="slides">
-                            <img src="assets/media/img/product/product1.png" alt="">
-                            <img src="assets/media/img/product/product2.png" alt="">
-                            <img src="assets/media/img/product/product3.png" alt="">
-                            <img src="assets/media/img/product/product4.png" alt="">
+                            <img src="assets/media/img/product/product1.webp" alt="">
+                            <img src="assets/media/img/product/product2.jpg" alt="">
+                            <img src="assets/media/img/product/product3.jpg" alt="">
+                            <img src="assets/media/img/product/product4.jpg" alt="">
                             <img src="assets/media/img/product/product5.png" alt="">
                         </div>
                     </div>
@@ -67,66 +71,39 @@
 
                 </div>
                 <div class="product_right">
-                    <h3>Диван Киль-3</h3>
-                    <h4>Страна: Италия</h4>
-                    <h4>Год производства: 2024</h4>
-                    <h4>Цвет: Серый</h4>
-                    <h4>Размер: 247x152x80</h4>
-                    <h4>Материал: дуб, пенополиуретан, велюр</h4>
+                    <h3>ЖК "Вишнёвый Сад"</h3>
+                    <h4>г. Казань, улица Муштари, 2А</h4>
+                    <h4>Год завершения: 2013</h4>
+                    <h4>Количество этажей: 5</h4>
+                    <h4>Количество квартир: 60</h4>
+                    <h4>Рядом с домом: школы № 18 и 131, Казанская кадетская школа-интернат им. Героя Советского Союза Б.К. Кузнецова</h4>
                     <h4>Срок гарантии: 10 лет</h4>
-                    <h4>Срок доставки: 2 недели</h4>
-                    <h5>136 333 ₽</h5>
-                    <button class="productbtn" onclick="location.href='catalog.html'">Добавить в корзину</button>
+                    <h5>Стоимость кв. метра: около 177 000 ₽</h5>
+                    
                 </div>
             </div>
-            <p>Обивка из премиум-класса ткани или натуральной кожи доступна в различных цветовых решениях, что позволяет
-                легко адаптировать диван под ваш стиль. Удобные подушки обеспечивают непревзойденный комфорт, а прочная
-                конструкция гарантирует долговечность и надежность на долгие годы.</p>
         </div>
     </div>
     <!-- product -->
     <!-- footer -->
     <footer>
         <div class="footer container">
-            <div class="nav_menu">
-                <div class="category">
-                    <h2>Каталог</h2>
-                    <h3>Спальня</h3>
-                    <h3>Гостиная</h3>
-                    <h3>Кабинет</h3>
-                    <h3>Кухня</h3>
-                    <h3>Прихожая</h3>
-                </div>
-                <div class="category">
-                    <h2>О компании</h2>
-                    <h3>Принципы</h3>
-                    <h3>История</h3>
-                    <h3>Работа</h3>
-                    <h3>Новости</h3>
-                    <h3>FAQ</h3>
-                </div>
-                <div class="category">
-                    <h2>Покупателям</h2>
-                    <h3>Акции</h3>
-                    <h3>Доставка</h3>
-                    <h3>Оплата</h3>
-                    <h3>Услуги</h3>
-                    <h3>Поддержка</h3>
-                </div>
-                <div class="category">
-                    <h2>Партнёрам</h2>
-                    <h3>Кооперация</h3>
-                    <h3>Дизайнерам</h3>
-                    <h3>Реклама</h3>
-                    <h3>Для отелей</h3>
-                    <h3>Поставки</h3>
-                </div>
-            </div>
             <div class="footer_menu">
                 <div class="logo">
-                    <p>Комфорт</p>
+                    <p onclick="location.href='index.html'">Комфорт</p>
                 </div>
-                <button class="logbtn" onclick="location.href='registation.html'">Войти</button>
+                <nav>
+                <a href="#banner">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#catalog">Услуги</a>
+                <a href="#advantages">Проекты</a>
+                <a href="#feedback">Новости</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+                <div class="social">
+                    <img src="assets/media/img/footer/VK com.svg" alt="">
+                    <img src="assets/media/img/footer/Telegram App.svg" alt="">
+                </div>
             </div>
         </div>
         </div>

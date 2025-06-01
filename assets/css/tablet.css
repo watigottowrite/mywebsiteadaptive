@@ -9,7 +9,7 @@
 }
 
 .container {
-    max-width: 504px;
+    max-width: 924px;
     margin: 0 auto;
 }
 
@@ -23,12 +23,12 @@
 }
 
 body {
-    background-color: #D5BDAF;
+    background-color: #808080;
 }
 
 /* header */
 header {
-    background-color: #D5BDAF;
+    background-color: #808080;
 
 }
 
@@ -98,7 +98,7 @@ nav {
     width: 90%;
     height: 100%;
     left: -100%;
-    background-color: #6d5f5a;
+    background-color: #808080;
     display: flex;
     padding: 120px;
     flex-direction: column;
@@ -209,7 +209,7 @@ nav a:hover {
 
 .logbtn {
     font-size: 12px;
-    color: #D5BDAF;
+    color: #808080;
     background-color: #edede9;
     padding: 7px 36px;
     border: none;
@@ -263,9 +263,9 @@ nav a:hover {
 }
 
 /* banner */
-/* advantages */
+/* about */
 
-.advantages_content {
+.about_content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,11 +292,81 @@ nav a:hover {
 }
 
 .right_content h3 {
-    font-size: 24px;
-    color: black;
+    font-size: 16px;
+    color: white;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 50px;
 }
+
+/* about */
+/* advantages */
+.advantages {
+    background-color: #EDEDE9;
+}
+
+.advantages h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.advantages_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+.accordion {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-bottom: 100px;
+
+}
+
+.accordion::after {
+    content: url(../media/img/advantages/arrowdown.svg);
+    position: relative;
+    left: 15px;
+    top: 2px;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 350px;
+}
+
+.panel p {
+    font-size: 16px;
+    max-width: 329px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.advantages_card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
 
 /* advantages */
 /* catalog */
@@ -308,7 +378,7 @@ nav a:hover {
 .catalog_content h2 {
     font-size: 48px;
     font-weight: bold;
-    color: #D5BDAF;
+    color: #808080;
     text-align: center;
 }
 
@@ -340,7 +410,7 @@ nav a:hover {
 }
 
 .filter a:hover {
-    color: #D5BDAF;
+    color: #808080;
     transition: 0.3s ease-in-out;
 }
 
@@ -354,24 +424,25 @@ nav a:hover {
 
 .catalog_card {
     background-color: #d9d9d9;
-    width: 160px;
-    height: 300px;
+    width: 200px;
+    height: 340px;
 }
 
 .catalog_card img {
-    width: 160px;
-    height: 141px;
+    width: 200px;
+    height: 181px;
+    object-fit: cover;
 }
 
 .catalog_card h5 {
-    font-size: 16px;
+    font-size: 12px;
     color: black;
-    font-weight: normal;
+    font-weight: bold;
     padding-left: 10px;
 }
 
 .catalog_card h3 {
-    font-size: 16px;
+    font-size: 12px;
     color: black;
     font-weight: normal;
     margin-top: 14px;
@@ -379,25 +450,18 @@ nav a:hover {
 }
 
 .catalog_card h4 {
-    font-size: 16px;
+    font-size: 12px;
     color: black;
     font-weight: normal;
     margin-top: 1px;
     padding-left: 10px;
 }
 
-.catalog_card h4::after {
-    content: url(../media/img/catalog/Star.svg);
-    top: 4px;
-    left: 10px;
-    position: relative;
-}
-
 .catalogbtn {
     font-size: 10px;
     color: #EDEDE9;
     font-weight: normal;
-    background-color: #D5BDAF;
+    background-color: #808080;
     padding: 3px 11px 4px 12px;
     border: none;
     margin-top: 8px;
@@ -413,16 +477,34 @@ nav a:hover {
 
 /* catalog */
 /* feedback */
+.feedbackbg {
+    background-color: #EDEDE9;
+}
+
 .feedback {
     background-color: #EDEDE9;
 }
 
+.feedback {
+    position: relative;
+    overflow: hidden;
+    max-width: 924px;
+    margin: 0 auto;
+}
+
+
 .feedback h2 {
     font-size: 48px;
     font-weight: bold;
-    color: #D5BDAF;
+    color: #808080;
     text-align: center;
     padding: 100px 0px;
+}
+
+.feedback_slides {
+
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* feedback */
@@ -437,7 +519,7 @@ nav a:hover {
 .feedback_card {
     width: 414px;
     height: 180px;
-    background-color: #D5BDAF;
+    background-color: #808080;
 }
 
 .card_content {
@@ -448,7 +530,7 @@ nav a:hover {
 }
 
 .cardtext h5 {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: normal;
     color: black;
 }
@@ -465,7 +547,7 @@ nav a:hover {
 }
 
 .name h3 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: black;
 }
@@ -515,27 +597,23 @@ nav a:hover {
 
 .contacts_content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 100px;
 }
 
 .contactleft {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
 }
 
 .contactleft h3 {
-    font-size: 12px;
+    font-size: 24px;
     font-weight: bold;
     color: #EDEDE9;
 }
 
-.contactright img {
-    width: 332px;
-    height: 225px;
-}
+
 
 /* contacts */
 /* footer */
@@ -592,7 +670,7 @@ nav a:hover {
 .registration_content h2 {
     font-size: 72px;
     font-weight: bold;
-    color: #D5BDAF;
+    color: #808080;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -600,7 +678,7 @@ nav a:hover {
 .registration_content a {
     font-size: 32px;
     font-weight: normal;
-    color: #D5BDAF;
+    color: #808080;
     margin: 55px 0px 50px;
 }
 
@@ -612,7 +690,7 @@ nav a:hover {
 .form h3 {
     font-size: 32px;
     font-weight: bold;
-    color: #D5BDAF;
+    color: #808080;
     position: relative;
     left: 64px;
     margin-bottom: 30px;
@@ -629,7 +707,7 @@ form {
 form input {
     width: 820px;
     height: 63px;
-    border: 4px solid #D5BDAF;
+    border: 4px solid #808080;
     font-size: 32px;
     margin-bottom: 25px;
 }
@@ -639,7 +717,7 @@ form input {
     font-weight: bold;
     color: #EDEDE9;
     padding: 13px 40px;
-    background-color: #D5BDAF;
+    background-color: #808080;
     border: none;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -669,7 +747,8 @@ form input {
 
 .product {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     gap: 53px;
 }
 
@@ -681,14 +760,15 @@ form input {
 .product-left input[name="slide"] {
     display: none;
 }
-
+.product_right{
+    max-width: 701px;
+}
 .slide {
     display: flex;
     align-items: flex-start;
     margin-top: 50px;
     max-width: 701px;
 }
-
 .slide label {
     display: inline-block;
     cursor: pointer;
@@ -776,7 +856,7 @@ form input {
     font-size: 24px;
     color: #EDEDE9;
     font-weight: bold;
-    background-color: #D5BDAF;
+    background-color: #808080;
     padding: 20px 19px;
     border: none;
     transition: 0.3s ease-in-out;
